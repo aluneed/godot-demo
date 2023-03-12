@@ -1,0 +1,20 @@
+# Godot 4+ specific ignores
+/.godot/
+/addons/
+
+# IntelliJ
+.idea
+*.ipr
+*.iml
+*.iws
+
+# Visual Studio Code
+.vscode
+.factorypath
+
+# Vim
+*.swp
+*.swo
+ 
+# OSX
+.DS_Store

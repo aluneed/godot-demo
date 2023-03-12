@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7e4rr01gw1tj"]
+
+[ext_resource type="PackedScene" uid="uid://yln5cl3qiv1g" path="res://Wall.tscn" id="2_52p70"]
+[ext_resource type="PackedScene" uid="uid://btqu3mf5o0pov" path="res://GodotSprite.tscn" id="2_nthtd"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+offset_left = 25.0
+offset_top = 25.0
+offset_right = 332.0
+offset_bottom = 179.0
+text = "Toggle Motion
+"
+
+[node name="Wall" parent="." instance=ExtResource("2_52p70")]
+position = Vector2(30, 780)
+
+[node name="GodotSprite" parent="." instance=ExtResource("2_nthtd")]

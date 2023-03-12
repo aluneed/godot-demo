@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://yln5cl3qiv1g"]
+
+[ext_resource type="Texture2D" uid="uid://dw6d3fod420i5" path="res://assets/Bouncy Platform Long.png" id="1_lkdw7"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_gm0xv"]
+bounce = 0.5
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tkgg3"]
+radius = 29.0
+height = 1840.0
+
+[node name="Wall" type="StaticBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_gm0xv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(926, 32)
+scale = Vector2(6.05229, 1.07895)
+texture = ExtResource("1_lkdw7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(926, 32)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_tkgg3")
